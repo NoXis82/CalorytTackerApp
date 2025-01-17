@@ -35,5 +35,9 @@ gradlePlugin {
             id = "calorytrackerapp.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
+        register("androidRetrofit") {
+            id = "calorytrackerapp.android.retrofit"
+            implementationClass = "AndroidRetrofitConventionPlugin"
+        }
     }
 }

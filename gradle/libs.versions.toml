@@ -63,6 +63,7 @@ room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 #Retrofit
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 moshiConverter = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "okHttpVersion" }
+#okHttp
 okHttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okHttpVersion" }
 okHttpLoggingInterceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okHttpVersion" }
 
@@ -94,3 +95,4 @@ calorytrackerapp-android-library = { id = "calorytrackerapp.android.library", ve
 calorytrackerapp-android-library-compose = { id = "calorytrackerapp.android.library.compose", version = "unspecified" }
 calorytrackerapp-android-room = { id = "calorytrackerapp.android.room", version = "unspecified" }
 calorytrackerapp-android-hilt = { id = "calorytrackerapp.android.hilt", version = "unspecified" }
+calorytrackerapp-android-retrofit = { id = "calorytrackerapp.android.retrofit", version = "unspecified" }
