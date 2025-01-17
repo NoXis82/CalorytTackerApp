@@ -1,28 +1,29 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+//    alias(libs.plugins.android.application)
+//    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.calorytrackerapp.android.application)
     alias(libs.plugins.kotlin.compose)
 }
 
-val versionMajor = 1
-val versionMinor = 0
-val versionPatch = 0
-val versionBuild = 1
-val bundleId = "ru.noxis.calorytrackerapp"
+//val versionMajor = 1
+//val versionMinor = 0
+//val versionPatch = 0
+//val versionBuild = 1
+//val bundleId = "ru.noxis.calorytrackerapp"
 
 android {
-    namespace = bundleId
-    compileSdk = 35
-
-    defaultConfig {
-        applicationId = bundleId
-        minSdk = 26
-        targetSdk = 35
-        versionCode = versionBuild
-        versionName = "${versionMajor}.${versionMinor}.${versionPatch}"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
+//    namespace = bundleId
+//    compileSdk = 35
+//
+//    defaultConfig {
+//        applicationId = bundleId
+//        minSdk = 26
+//        targetSdk = 35
+//        versionCode = versionBuild
+//        versionName = "${versionMajor}.${versionMinor}.${versionPatch}"
+//
+//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//    }
 
     buildTypes {
         release {
@@ -33,13 +34,13 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
+//    compileOptions {
+//        sourceCompatibility = JavaVersion.VERSION_11
+//        targetCompatibility = JavaVersion.VERSION_11
+//    }
+//    kotlinOptions {
+//        jvmTarget = "11"
+//    }
     buildFeatures {
         compose = true
     }

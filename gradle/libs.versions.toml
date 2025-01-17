@@ -12,6 +12,16 @@ appcompat = "1.7.0"
 material = "1.12.0"
 jetbrainsKotlinJvm = "2.0.0"
 
+bundleId = "ru.noxis.calorytrackerapp"
+versionMajor = "1"
+versionMinor = "0"
+versionPatch = "0"
+versionBuild = "1"
+projectMinSdkVersion = "26"
+projectTargetSdkVersion = "35"
+projectCompileSdkVersion = "35"
+
+
 hilt = "2.52"
 hiltNavigationCompose = "1.2.0"
 ksp = "2.0.21-1.0.28"
@@ -62,6 +72,9 @@ moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
 #Coil
 coil ={module = "io.coil-kt:coil-compose", version.ref = "coil"}
 
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -72,3 +85,5 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrai
 
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+# custom plugins defined
+calorytrackerapp-android-application = { id = "calorytrackerapp.android.application", version = "unspecified" }
