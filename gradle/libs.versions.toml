@@ -56,7 +56,7 @@ hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testi
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 
 ## Room
-room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 
@@ -92,3 +92,4 @@ calorytrackerapp-android-application = { id = "calorytrackerapp.android.applicat
 calorytrackerapp-android-application-compose = { id = "calorytrackerapp.android.application.compose", version = "unspecified" }
 calorytrackerapp-android-library = { id = "calorytrackerapp.android.library", version = "unspecified" }
 calorytrackerapp-android-library-compose = { id = "calorytrackerapp.android.library.compose", version = "unspecified" }
+calorytrackerapp-android-room = { id = "calorytrackerapp.android.room", version = "unspecified" }

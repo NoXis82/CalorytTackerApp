@@ -27,5 +27,9 @@ gradlePlugin {
             id = "calorytrackerapp.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
+        register("androidRoom") {
+            id = "calorytrackerapp.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
     }
 }
