@@ -31,5 +31,9 @@ gradlePlugin {
             id = "calorytrackerapp.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
+        register("androidHilt") {
+            id = "calorytrackerapp.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
     }
 }

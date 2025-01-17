@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.calorytrackerapp.android.application.compose)
+    alias(libs.plugins.calorytrackerapp.android.hilt)
 }
 
 android {
