@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -19,7 +20,10 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CalorytTackerApp"
+gradle.startParameter.excludedTaskNames.addAll(listOf(":build-logic:convention:testClasses"))
+
+
+rootProject.name = "CaloryTrackerApp"
 include(":app")
 include(":core")
 include(":onboarding:onboarding_domain")

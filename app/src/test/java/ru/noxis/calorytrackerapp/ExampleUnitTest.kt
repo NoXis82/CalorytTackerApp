@@ -1,4 +1,4 @@
-package ru.noxis.caloryttackerapp
+package ru.noxis.calorytrackerapp
 
 import org.junit.Test
 
