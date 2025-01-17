@@ -23,5 +23,9 @@ gradlePlugin {
             id = "calorytrackerapp.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+        register("androidLibraryCompose") {
+            id = "calorytrackerapp.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
     }
 }

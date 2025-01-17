@@ -91,3 +91,4 @@ room = { id = "androidx.room", version.ref = "room" }
 calorytrackerapp-android-application = { id = "calorytrackerapp.android.application", version = "unspecified" }
 calorytrackerapp-android-application-compose = { id = "calorytrackerapp.android.application.compose", version = "unspecified" }
 calorytrackerapp-android-library = { id = "calorytrackerapp.android.library", version = "unspecified" }
+calorytrackerapp-android-library-compose = { id = "calorytrackerapp.android.library.compose", version = "unspecified" }
