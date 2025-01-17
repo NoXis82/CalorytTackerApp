@@ -4,16 +4,22 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+val versionMajor = 1
+val versionMinor = 0
+val versionPatch = 0
+val versionBuild = 1
+val bundleId = "ru.noxis.calorytrackerapp"
+
 android {
-    namespace = "ru.noxis.caloryttackerapp"
+    namespace = bundleId
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ru.noxis.caloryttackerapp"
+        applicationId = bundleId
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = versionBuild
+        versionName = "${versionMajor}.${versionMinor}.${versionPatch}"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

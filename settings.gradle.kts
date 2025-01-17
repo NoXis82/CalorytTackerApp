@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -19,7 +20,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CalorytTackerApp"
+rootProject.name = "CaloryTrackerApp"
 include(":app")
 include(":core")
 include(":onboarding:onboarding_domain")

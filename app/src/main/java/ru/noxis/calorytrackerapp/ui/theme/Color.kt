@@ -1,4 +1,4 @@
-package ru.noxis.caloryttackerapp.ui.theme
+package ru.noxis.calorytrackerapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
