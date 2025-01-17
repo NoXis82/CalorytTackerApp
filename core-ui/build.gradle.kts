@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.noxis.tracker_presentation"
+    namespace = "ru.noxis.core_ui"
 }
 
 dependencies {
@@ -12,7 +12,9 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
 
-    implementation(project(":core-ui"))
+    implementation(libs.bundles.compose)
+    implementation(libs.bundles.compose.debug)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -14,6 +14,14 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.material3)
 
+    implementation(project(":core-ui"))
+    implementation(project(":core"))
+    implementation(project(":onboarding:onboarding_domain"))
+    implementation(project(":onboarding:onboarding_presentation"))
+    implementation(project(":tracker:tracker_domain"))
+    implementation(project(":tracker:tracker_data"))
+    implementation(project(":tracker:tracker_presentation"))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

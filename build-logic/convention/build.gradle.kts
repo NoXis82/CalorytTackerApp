@@ -43,5 +43,9 @@ gradlePlugin {
             id = "calorytrackerapp.android.okhttp"
             implementationClass = "AndroidHttpConventionPlugin"
         }
+        register("androidFeatureUi") {
+            id = "calorytrackerapp.android.feature.ui"
+            implementationClass = "AndroidDynamicFeatureConventionPlugin"
+        }
     }
 }

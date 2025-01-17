@@ -38,6 +38,9 @@ androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "j
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
@@ -97,3 +100,19 @@ calorytrackerapp-android-room = { id = "calorytrackerapp.android.room", version 
 calorytrackerapp-android-hilt = { id = "calorytrackerapp.android.hilt", version = "unspecified" }
 calorytrackerapp-android-retrofit = { id = "calorytrackerapp.android.retrofit", version = "unspecified" }
 calorytrackerapp-android-okhttp = { id = "calorytrackerapp.android.okhttp", version = "unspecified" }
+calorytrackerapp-android-feature-ui = { id = "calorytrackerapp.android.feature.ui", version = "unspecified" }
+
+[bundles]
+compose = [
+    "androidx-activity-compose",
+    "androidx-lifecycle-runtime-compose",
+    "androidx-lifecycle-viewmodel-compose",
+    "androidx-material3",
+    "androidx-ui",
+    "androidx-ui-graphics",
+    "androidx-ui-tooling-preview",
+]
+compose-debug = [
+    "androidx-ui-tooling",
+    "androidx-ui-test-manifest",
+]
