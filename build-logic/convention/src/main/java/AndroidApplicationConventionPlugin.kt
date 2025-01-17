@@ -2,6 +2,8 @@ import com.android.build.api.dsl.ApplicationExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
+import ru.noxis.convention.ExtensionType
+import ru.noxis.convention.configureBuildTypes
 import ru.noxis.convention.configureKotlinAndroid
 import ru.noxis.convention.libs
 
@@ -31,6 +33,11 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                 }
                 configureKotlinAndroid(this)
+
+                configureBuildTypes(
+                    commonExtension = this,
+                    extensionType = ExtensionType.APPLICATION
+                )
             }
         }
     }

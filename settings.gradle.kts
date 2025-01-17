@@ -20,6 +20,9 @@ dependencyResolutionManagement {
     }
 }
 
+gradle.startParameter.excludedTaskNames.addAll(listOf(":build-logic:convention:testClasses"))
+
+
 rootProject.name = "CaloryTrackerApp"
 include(":app")
 include(":core")
