@@ -85,5 +85,8 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrai
 
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+room = { id = "androidx.room", version.ref = "room" }
+
 # custom plugins defined
 calorytrackerapp-android-application = { id = "calorytrackerapp.android.application", version = "unspecified" }
+calorytrackerapp-android-application-compose = { id = "calorytrackerapp.android.application.compose", version = "unspecified" }
