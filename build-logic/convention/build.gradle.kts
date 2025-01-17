@@ -39,5 +39,9 @@ gradlePlugin {
             id = "calorytrackerapp.android.retrofit"
             implementationClass = "AndroidRetrofitConventionPlugin"
         }
+        register("androidOkHttp") {
+            id = "calorytrackerapp.android.okhttp"
+            implementationClass = "AndroidHttpConventionPlugin"
+        }
     }
 }

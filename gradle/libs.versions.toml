@@ -96,3 +96,4 @@ calorytrackerapp-android-library-compose = { id = "calorytrackerapp.android.libr
 calorytrackerapp-android-room = { id = "calorytrackerapp.android.room", version = "unspecified" }
 calorytrackerapp-android-hilt = { id = "calorytrackerapp.android.hilt", version = "unspecified" }
 calorytrackerapp-android-retrofit = { id = "calorytrackerapp.android.retrofit", version = "unspecified" }
+calorytrackerapp-android-okhttp = { id = "calorytrackerapp.android.okhttp", version = "unspecified" }
