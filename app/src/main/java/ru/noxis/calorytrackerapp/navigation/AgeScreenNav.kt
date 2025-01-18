@@ -19,7 +19,7 @@ fun NavGraphBuilder.ageScreen(
         AgeScreen(
             modifier = Modifier.padding(innerPadding),
             snackbarHostState = snackbarHostState,
-            onNextClick = { }
+            onNextClick = { navController.navigate(Route.Height) }
         )
     }
 }
