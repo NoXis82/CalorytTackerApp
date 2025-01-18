@@ -68,7 +68,7 @@ room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 
 #Retrofit
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
-moshiConverter = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "okHttpVersion" }
+moshiConverter = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
 
 #okHttp
 okHttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okHttpVersion" }
