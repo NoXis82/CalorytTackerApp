@@ -28,11 +28,11 @@ fun NavigateRoot() {
             genderScreen(navController, innerPadding)
             heightScreen(navController, snackbarHostState, innerPadding)
             weightScreen(navController, snackbarHostState, innerPadding)
-            nutrientGoalScreen(navController)
-            activityScreen(navController)
-            goalScreen(navController)
-            trackerOverviewScreen(navController)
-            searchScreen(navController)
+            nutrientGoalScreen(navController, innerPadding)
+            activityScreen(navController, innerPadding)
+            goalScreen(navController, innerPadding)
+            trackerOverviewScreen(navController, innerPadding)
+            searchScreen(navController, innerPadding)
         }
     }
 }

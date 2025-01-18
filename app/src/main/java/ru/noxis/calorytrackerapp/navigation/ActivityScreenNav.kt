@@ -1,19 +1,19 @@
 package ru.noxis.calorytrackerapp.navigation
 
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import ru.noxis.core.navigation.Route
-import ru.noxis.onboarding_presentation.welcome.WelcomeScreen
+import ru.noxis.onboarding_presentation.activity.ActivityScreen
 
-fun NavGraphBuilder.activityScreen(navController: NavController) {
+fun NavGraphBuilder.activityScreen(navController: NavController, innerPadding: PaddingValues) {
     composable<Route.Activity> {
-//        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//
-//        }
+        ActivityScreen(
+            modifier = Modifier.padding(innerPadding),
+            onNextClick = { navController.navigate(Route.Goal) }
+        )
     }
 }
