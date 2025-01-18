@@ -9,6 +9,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import ru.noxis.core.data.preferences.DefaultPreferences
 import ru.noxis.core.domain.preferences.Preferences
+import ru.noxis.core.domain.use_case.FilterOutDigits
 import javax.inject.Singleton
 
 @Module
@@ -29,4 +30,9 @@ object AppModule {
         return DefaultPreferences(sharedPreferences)
     }
 
+    @Provides
+    @Singleton
+    fun provideFilterOutDigitsUseCase(): FilterOutDigits {
+        return FilterOutDigits()
+    }
 }
