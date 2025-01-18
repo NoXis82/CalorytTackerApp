@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.calorytrackerapp.android.library)
+    alias(libs.plugins.calorytrackerapp.android.room)
     alias(libs.plugins.calorytrackerapp.android.okhttp)
     alias(libs.plugins.calorytrackerapp.android.retrofit)
     alias(libs.plugins.calorytrackerapp.android.hilt)
