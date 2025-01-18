@@ -18,7 +18,7 @@ fun ActionButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     isEnabled: Boolean = true,
-    textStyle: TextStyle = MaterialTheme.typography.bodySmall
+    textStyle: TextStyle = MaterialTheme.typography.bodyLarge
 ) {
     TextButton(
         onClick = onClick,
