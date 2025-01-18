@@ -3,7 +3,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 import ru.noxis.convention.libs
 
-class AndroidHiltConventionPlugin: Plugin<Project> {
+class AndroidHiltConventionPlugin : Plugin<Project> {
 
     override fun apply(target: Project) {
         target.run {
