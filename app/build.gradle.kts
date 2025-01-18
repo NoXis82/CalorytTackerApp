@@ -22,6 +22,8 @@ dependencies {
     implementation(project(":tracker:tracker_data"))
     implementation(project(":tracker:tracker_presentation"))
 
+    implementation(libs.navigation.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

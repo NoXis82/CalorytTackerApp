@@ -16,12 +16,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import ru.noxis.core_ui.LocalSpacing
 import ru.noxis.core.R
+import ru.noxis.core.navigation.Route
+import ru.noxis.core.util.UiEvent
 import ru.noxis.onboarding_presentation.components.ActionButton
 
 @Composable
 fun WelcomeScreen(
     modifier: Modifier = Modifier,
-    onNextClick: () -> Unit
+    onNavigate: (UiEvent.Navigate) -> Unit
 ) {
     val spacing = LocalSpacing.current
     Column(
@@ -39,7 +41,7 @@ fun WelcomeScreen(
         Spacer(modifier = Modifier.height(spacing.spaceMedium))
         ActionButton(
             text = stringResource(id = R.string.next),
-            onClick = { onNextClick() },
+            onClick = { onNavigate(UiEvent.Navigate(Route.Age)) },
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
     }
