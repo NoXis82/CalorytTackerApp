@@ -8,12 +8,15 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import ru.noxis.core.navigation.Route
-import ru.noxis.onboarding_presentation.welcome.WelcomeScreen
+import ru.noxis.onboarding_presentation.gender.GenderScreen
 
 fun NavGraphBuilder.genderScreen(navController: NavController) {
     composable<Route.Gender> {
-//        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//
-//        }
+        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+            GenderScreen(
+                modifier = Modifier.padding(innerPadding),
+                onNextClick = { }
+            )
+        }
     }
 }

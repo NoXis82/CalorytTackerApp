@@ -15,7 +15,7 @@ fun NavGraphBuilder.welcomeScreen(navController: NavController) {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
             WelcomeScreen(
                 modifier = Modifier.padding(innerPadding),
-                onNavigate = navController::navigate
+                onNavigate = { navController.navigate(Route.Gender) }
             )
         }
     }
