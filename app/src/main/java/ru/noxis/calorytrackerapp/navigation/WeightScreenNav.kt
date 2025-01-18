@@ -19,7 +19,7 @@ fun NavGraphBuilder.weightScreen(
         WeightScreen(
             modifier = Modifier.padding(innerPadding),
             snackbarHostState = snackbarHostState,
-            onNextClick = { }
+            onNextClick = { navController.navigate(Route.Activity) }
         )
     }
 }
