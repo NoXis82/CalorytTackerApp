@@ -15,6 +15,8 @@ dependencies {
 
     implementation(project(":core-ui"))
     implementation(project(":core"))
+    implementation(project(":onboarding:onboarding_domain"))
+
     implementation(libs.bundles.compose)
     implementation(libs.bundles.compose.debug)
 

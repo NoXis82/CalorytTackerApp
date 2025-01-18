@@ -42,7 +42,7 @@ fun GoalScreen(
         }
     }
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .padding(spacing.spaceLarge)
     ) {

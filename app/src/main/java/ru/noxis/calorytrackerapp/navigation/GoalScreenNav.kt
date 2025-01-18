@@ -16,7 +16,7 @@ fun NavGraphBuilder.goalScreen(navController: NavController, innerPadding: Paddi
     composable<Route.Goal> {
         GoalScreen(
             modifier = Modifier.padding(innerPadding),
-            onNextClick = {}
+            onNextClick = { navController.navigate(Route.NutrientGoal) }
         )
     }
 }
