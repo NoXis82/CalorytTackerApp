@@ -32,7 +32,7 @@ fun NavigateRoot() {
             activityScreen(navController, innerPadding)
             goalScreen(navController, innerPadding)
             trackerOverviewScreen(navController, innerPadding)
-            searchScreen(navController, innerPadding)
+            searchScreen(navController, snackbarHostState, innerPadding)
         }
     }
 }
