@@ -9,11 +9,14 @@ import androidx.navigation.compose.composable
 import ru.noxis.core.navigation.Route
 import ru.noxis.tracker_presentation.tracker_overview.TrackerOverviewScreen
 
-fun NavGraphBuilder.trackerOverviewScreen(navController: NavController, innerPadding: PaddingValues) {
+fun NavGraphBuilder.trackerOverviewScreen(
+    navController: NavController,
+    innerPadding: PaddingValues
+) {
     composable<Route.TrackerOverview> {
         TrackerOverviewScreen(
             modifier = Modifier.padding(innerPadding),
-            onNavigate = { }
+            onNavigate = {}
         )
     }
 }

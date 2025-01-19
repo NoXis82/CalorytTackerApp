@@ -32,5 +32,10 @@ sealed interface Route {
     data object TrackerOverview : Route
 
     @Serializable
-    data object Search : Route
+    data class Search(
+        val mealName: String,
+        val dayOfMonth: Int,
+        val month: Int,
+        val year: Int
+    ) : Route
 }
