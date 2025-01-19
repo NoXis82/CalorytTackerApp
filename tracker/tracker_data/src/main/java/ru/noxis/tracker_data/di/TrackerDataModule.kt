@@ -12,6 +12,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import ru.noxis.tracker_data.local.TrackerDatabase
 import ru.noxis.tracker_data.remote.OpenFoodApi
+import ru.noxis.tracker_data.repository.TrackerRepositoryImpl
+import ru.noxis.tracker_domain.repository.TrackerRepository
 import javax.inject.Singleton
 
 @Module
@@ -50,5 +52,17 @@ object TrackerDataModule {
             TrackerDatabase::class.java,
             "tracker_db"
         ).build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideTrackerRepository(
+        api: OpenFoodApi,
+        db: TrackerDatabase
+    ): TrackerRepository {
+        return TrackerRepositoryImpl(
+            dao = db.dao,
+            api = api
+        )
     }
 }
