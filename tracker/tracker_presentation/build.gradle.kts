@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.calorytrackerapp.android.library.compose)
+    alias(libs.plugins.calorytrackerapp.android.hilt)
 }
 
 android {
@@ -13,6 +14,8 @@ dependencies {
     implementation(libs.material)
 
     implementation(project(":core-ui"))
+    implementation(project(":core"))
+    implementation(project(":tracker:tracker_domain"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
