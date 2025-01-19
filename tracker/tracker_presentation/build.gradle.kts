@@ -17,6 +17,9 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":tracker:tracker_domain"))
 
+    implementation(libs.bundles.compose)
+    implementation(libs.bundles.compose.debug)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

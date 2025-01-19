@@ -19,7 +19,7 @@ fun NavGraphBuilder.nutrientGoalScreen(
         NutrientGoalScreen(
             modifier = Modifier.padding(innerPadding),
             snackbarHostState = snackbarHostState,
-            onNextClick = { }
+            onNextClick = { navController.navigate(Route.TrackerOverview) }
         )
     }
 }
