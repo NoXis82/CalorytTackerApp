@@ -24,6 +24,10 @@ dependencies {
 
     implementation(libs.navigation.compose)
 
+    testImplementation(libs.mockk)
+    testImplementation(libs.truth)
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

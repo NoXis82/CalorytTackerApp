@@ -16,6 +16,12 @@ dependencies {
     implementation(project(":core"))
 
     testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.mockkAndroid)
+    testImplementation(libs.mockkAgentAndroid)
+    testImplementation(libs.truth)
+    testImplementation(libs.dexmaker)
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
