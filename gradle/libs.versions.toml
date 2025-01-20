@@ -29,6 +29,8 @@ room = "2.6.1"
 okHttpVersion = "5.0.0-alpha.2"
 retrofit = "2.11.0"
 moshi = "1.15.2"
+moshiKotlin = "1.14.0"
+
 coil = "2.6.0"
 navigationVersion = "2.8.5"
 serialization = "1.6.3"
@@ -78,6 +80,7 @@ okHttpLoggingInterceptor = { module = "com.squareup.okhttp3:logging-interceptor"
 
 #Moshi
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
 
 #Coil
 coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }

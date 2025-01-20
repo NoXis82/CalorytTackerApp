@@ -18,6 +18,8 @@ dependencies {
 
     implementation(project(":tracker:tracker_domain"))
 
+    implementation(libs.moshi.kotlin)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

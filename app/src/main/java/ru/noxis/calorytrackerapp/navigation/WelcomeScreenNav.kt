@@ -13,7 +13,7 @@ fun NavGraphBuilder.welcomeScreen(navController: NavController, innerPadding: Pa
     composable<Route.Welcome> {
         WelcomeScreen(
             modifier = Modifier.padding(innerPadding),
-            onNavigate = { navController.navigate(Route.Gender) }
+            onNextClick = { navController.navigate(Route.Gender) }
         )
     }
 }

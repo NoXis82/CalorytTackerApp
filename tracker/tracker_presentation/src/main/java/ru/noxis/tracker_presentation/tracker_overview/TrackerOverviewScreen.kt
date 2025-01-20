@@ -24,7 +24,7 @@ import ru.noxis.tracker_presentation.tracker_overview.components.TrackedFoodItem
 @Composable
 fun TrackerOverviewScreen(
     modifier: Modifier = Modifier,
-    onNavigate: () -> Unit,
+    onNavigateToSearch: (String, Int, Int, Int) -> Unit,
     viewModel: TrackerOverviewViewModel = hiltViewModel()
 ) {
     val spacing = LocalSpacing.current
@@ -83,9 +83,12 @@ fun TrackerOverviewScreen(
                                 meal.name.asString(context)
                             ),
                             onClick = {
-//                                viewModel.onEvent(
-//                                    TrackerOverviewEvent.OnAddFoodClick(meal)
-//                                )
+                                onNavigateToSearch(
+                                    meal.name.asString(context),
+                                    state.date.dayOfMonth,
+                                    state.date.monthValue,
+                                    state.date.year
+                                )
                             },
                             modifier = Modifier.fillMaxWidth()
                         )
