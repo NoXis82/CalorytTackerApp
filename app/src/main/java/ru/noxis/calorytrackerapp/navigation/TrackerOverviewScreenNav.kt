@@ -16,7 +16,16 @@ fun NavGraphBuilder.trackerOverviewScreen(
     composable<Route.TrackerOverview> {
         TrackerOverviewScreen(
             modifier = Modifier.padding(innerPadding),
-            onNavigate = {}
+            onNavigateToSearch = { mealName, day, month, year ->
+                navController.navigate(
+                    route = Route.Search(
+                        mealName = mealName,
+                        dayOfMonth = day,
+                        month = month,
+                        year = year
+                    )
+                )
+            }
         )
     }
 }
