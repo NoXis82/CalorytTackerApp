@@ -12,7 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import ru.noxis.core.navigation.Route
 
 @Composable
-fun NavigateRoot() {
+fun NavigateRoot(shouldShowOnboarding: Boolean) {
     val navController = rememberNavController()
     val snackbarHostState = remember { SnackbarHostState() }
     Scaffold(
@@ -21,7 +21,7 @@ fun NavigateRoot() {
     ) { innerPadding ->
         NavHost(
             navController = navController,
-            startDestination = Route.Welcome
+            startDestination = if (shouldShowOnboarding) Route.Welcome else Route.TrackerOverview
         ) {
             welcomeScreen(navController, innerPadding)
             ageScreen(navController, snackbarHostState, innerPadding)
